@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/resumeScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/resumemaker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0077B5"
+                android:text="Create Your Resume"
+                android:textSize="25dp"
+                android:layout_marginTop="21dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/saveresume"
+                android:layout_marginEnd="28dp" />
+
+            <Button
+                android:id="@+id/saveresume"
+                android:background="#4CAF79"
+                android:textColor="#ffffff"
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/h1"
+                android:textSize="10dp"
+                android:layout_alignBottom="@+id/h1"
+                android:text="Get PDF"
+                android:layout_marginEnd="45dp"
+                android:layout_above="@+id/headings"
+                android:layout_alignParentEnd="true" />
+
+
+            <ListView
+                android:layout_marginTop="20dp"
+                android:id="@+id/headings"
+                android:layout_below="@+id/h1"
+                android:longClickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:drawSelectorOnTop="true"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
